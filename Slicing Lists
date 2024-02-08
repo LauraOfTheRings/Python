@@ -1,0 +1,30 @@
+# You work at Len’s Slice, a new pizza joint in the neighborhood. You are going to use your knowledge of Python lists to organize some of your sales data.
+
+toppings = ["pepperoni", "pineapple", "cheese", "sausage", "olives", "anchovies", "mushrooms"]
+
+prices = [2, 6, 1, 3, 2, 7, 2]
+
+# your boss wants to know the number of $2 slices:
+num_two_dollar_slices = prices.count(2)
+#print(num_two_dollar_slices)
+
+# find the number of toppings for advertising:
+num_pizzas = len(toppings)
+#print("We sell " + str(num_pizzas) + " different kinds of pizzas!")
+
+# 2D list pizza and prices:
+pizza_and_prices = [[2, "pepperoni"], [6, "pineapple"], [1, "cheese"], [3, "sausage"], [2, "olives"], [7, "anchovies"], [2, "mushrooms"]]
+
+pizza_and_prices.sort()
+# print(pizza_and_prices)
+
+# Find the cheapest and most expensive pizza:
+cheapest_pizza = pizza_and_prices[:1]
+priciest_pizza = pizza_and_prices[-1:]
+
+# since our most expensive slice was bought, let's remove it:
+pizza_and_prices.pop()
+
+# We want to add a new slice, peppers that costs 2.5 to our list:
+pizza_and_prices.insert(4, [2.5, "peppers"])
+# print(pizza_and_prices)
