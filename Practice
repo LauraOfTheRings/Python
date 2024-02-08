@@ -1,0 +1,14 @@
+# Finding an average of grades using a list and a for loop:
+
+grade_total = 0
+grade_counter = 0
+
+grades = [98, 76, 71, 87, 83, 90, 57,27, 82, 94]
+
+for grade in grades:
+    grade_total += grade
+    grade_counter += 1
+
+average = grade_total / grade_counter
+
+print(average)
